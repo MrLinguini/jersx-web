@@ -273,10 +273,11 @@ nav a:hover {
 }
 
 .admin-login {
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(circle at 50% 0%, rgba(245,166,35,0.06), transparent 60%);
 }
 
 .login-box {
@@ -284,15 +285,71 @@ nav a:hover {
     width: 100%;
     background-color: var(--color-bg-alt);
     border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 8px;
-    padding: 32px;
+    border-radius: 12px;
+    padding: 40px 36px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.login-icono {
+    font-size: 2rem;
+    margin-bottom: 12px;
 }
 
 .login-box h1 {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.login-subtitulo {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    margin-bottom: 28px;
+}
+
+.login-box form {
+    text-align: left;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--color-bg);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: var(--color-teal);
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
     text-align: center;
+    margin-top: 8px;
+}
+
+.login-volver {
+    display: inline-block;
+    margin-top: 22px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.login-volver:hover {
+    color: var(--color-amber);
 }
 
 .admin-panel {
@@ -436,4 +493,86 @@ nav a:hover {
 .contacto-card p {
     color: rgba(255,255,255,0.75);
     font-size: 0.9rem;
+}
+
+.hero {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.hero-subtitulo {
+    color: rgba(255,255,255,0.7);
+    max-width: 540px;
+    margin: 0 auto 32px;
+    font-size: 1.05rem;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--color-teal);
+    color: var(--color-bg);
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-amber);
+    color: var(--color-amber);
+}
+
+.destacados {
+    padding: 40px 0 90px;
+}
+
+.destacados h2 {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+
+.destacados-footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.destacados-footer a {
+    color: var(--color-amber);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.destacados-footer a:hover {
+    text-decoration: underline;
 }
