@@ -576,3 +576,40 @@ nav a:hover {
 .destacados-footer a:hover {
     text-decoration: underline;
 }
+
+.btn-full:hover {
+    opacity: 0.85;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--color-teal);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+    margin-top: 10px;
+    box-shadow: 0 4px 20px rgba(45, 212, 191, 0.25);
+    letter-spacing: 0.02em;
+}
+
+.btn-enviar:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(45, 212, 191, 0.4);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.btn-enviar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}

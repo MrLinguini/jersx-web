@@ -8,10 +8,10 @@ class PortafolioController extends Controller
     {
         $proyectos = [
             [
-                'nombre' => 'Proyecto 1',
-                'descripcion' => 'Descripcion pendiente - proximamente.',
-                'tecnologias' => ['PHP', 'MySQL'],
-                'github' => '#',
+                'nombre' => 'Inventario Pro',
+                'descripcion' => 'Sistema de gestión de inventario con control de stock, alertas de reabastecimiento, roles de usuario y reportes en PDF. Incluye transacciones a nivel de base de datos para garantizar integridad en los movimientos de stock.',
+                'tecnologias' => ['PHP', 'MySQL', 'mPDF'],
+                'github' => 'https://github.com/MrLinguini/inventario-pro',
                 'demo' => '#',
             ],
             [

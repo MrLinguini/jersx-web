@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
+        const btnEnviar = form.querySelector('.btn-enviar');
+        btnEnviar.disabled = true;
+        btnEnviar.textContent = 'Enviando...';
+
         const resultadoEl = document.getElementById('mensaje-resultado');
         resultadoEl.textContent = 'Enviando...';
         resultadoEl.className = '';
