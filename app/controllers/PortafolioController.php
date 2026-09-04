@@ -15,10 +15,10 @@ class PortafolioController extends Controller
                 'demo' => '#',
             ],
             [
-                'nombre' => 'Proyecto 2',
-                'descripcion' => 'Descripcion pendiente - proximamente.',
-                'tecnologias' => ['JavaScript'],
-                'github' => '#',
+                'nombre' => 'Tareas API',
+                'descripcion' => 'API REST en PHP puro con autenticación por token (Bearer), y un cliente frontend 100% JavaScript vanilla — tablero Kanban con drag & drop, sin frameworks ni librerías externas.',
+                'tecnologias' => ['PHP', 'REST API', 'JavaScript'],
+                'github' => 'https://github.com/MrLinguini/tareas-api',
                 'demo' => '#',
             ],
             [
